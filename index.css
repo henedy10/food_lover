@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* for btns */
+.btn{
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid ;
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+/* ---------------------------------------- */
+/* START OF HEADER */
+#home{
+    height: 100vh;
+    background: url("img/home_bg.jpeg") center/cover no-repeat;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.4);
+}
+#home *{
+    z-index: 10;
+}
+#home .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5.5rem;
+}
+#home .navigation img{
+    width: 70px;
+    margin-top: 10px;
+}
+#home .navigation nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#home .navigation nav ul li a{
+    text-decoration: none;
+    padding: 10px 1.6rem;
+    font-size:  20px;
+    color: white;
+}
+#home .navigation nav ul li a:hover{
+    border-bottom: 2px solid yellow;
+}
+#home .content{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#home .content h1{
+    font-size: 40px;
+    font-weight: 900;
+    word-spacing: 5px;
+    text-align: center;
+}
+#home .content h1,p{
+    color: white;
+}
+#home .content h1 span{
+    color: rgb(235, 231, 39);
+}
+#home .content p{
+    margin: 20px 0;
+    font-size: 18px;
+}
+#home .content .btn-one{
+    color: white;
+}
+#home .content .btn-one:hover{
+    background-color: orange;
+}
+/* END OF HEADER */
+
+/* START OF ABOUT */
+#about{
+    background-color: white;
+    padding: 5.5rem 0;
+
+}
+#about .container .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#about .container .title h2{
+    font-size: 40px;
+    font-weight: 900;
+    word-spacing: 5px;
+    color: black;
+}
+#about .container .title p{
+    margin: 15px 0;
+    color: black;
+}
+#about .container .content-of-about{
+    display: flex;
+    justify-content: space-between;
+    margin:  3rem 6.5rem 0;
+}
+#about .container .content-of-about .content-right img{
+    max-width: 350px;
+}
+#about .container .content-of-about .content-left {
+    margin-right: 6rem;
+}
+#about .container .content-of-about .content-left p{
+    line-height: 1.7;
+    font-size: 20px;
+    color: black;
+}
+#about .container .content-of-about .content-left .btn-two{
+    display: inline-block;
+    margin: 40px 0;
+    color: white;
+    background-color: black;
+}
+#about .container .content-of-about .content-left .btn-two:hover{
+    background-color: white;
+    color: black;
+}
+/* END OF ABOUT */
+
+/* START OF OFFERS */
+#offers{
+    background: url("img/offer-background.jpg");
+    padding: 5.5rem 0;
+}
+#offers .container .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+#offers .container .title h2{
+    font-size: 40px;
+    font-weight: 900;
+    word-spacing: 5px;
+    color: orange;
+}
+#offers .container .title p{
+    margin: 15px 0;
+    color: white;
+}
+ #offers .container .content-of-offers{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 50px;
+}
+#offers .container .content-of-offers div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 260px;
+}
+#offers .container .content-of-offers div img{
+    margin: 30px 0;
+    width: 170px;
+}
+#offers .container .content-of-offers div p{
+    margin: 15px 0 ;
+}
+#offers .container .content-of-offers div p, h2, del{
+    color: white;
+}
+#offers .container .content-of-offers span{
+    color: orange;
+    font-size: 20px;
+    margin: 8px 0;
+}
+/* END OF OFFERS */
+
+/* START OF MENU */
+#menu{
+    padding: 5.5rem 0;
+    background-color: #dadada;
+
+}
+#menu .container .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#menu .container .title h2{
+    font-size: 40px;
+    font-weight: 900;
+    word-spacing: 5px;
+    color: black;
+}
+#menu .container .title p{
+    margin: 15px 0;
+    color: black;
+}
+#menu .content-of-menu{
+   width: 90%;
+   margin: 50px auto;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+#menu .content-of-menu div{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+#menu .content-of-menu div img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 15px 40px;
+}
+#menu .content-of-menu div .description  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#menu .content-of-menu div .description div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted;
+    padding-bottom: 15px;
+}
+#menu .content-of-menu div .description p{
+    padding-top: 10px;
+    color: black;
+}
+#menu .content-of-menu div .description div span{
+    font-size: 20px;
+    color: orangered;
+}
+#menu .three-btn{
+    width: 100%;
+    text-align: center;
+}
+#menu .three-btn .btn-three{
+    border: none;
+    background-color: orange;
+    color: white;
+}
+#menu .three-btn .btn-three:hover{
+    background-color: black;
+}
+/* END OF MENU*/
+
+/* START OF DAYTIME-ITEMS */
+.daytime-parts{
+    background: url("img/daytime_bg.jpeg");
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+.daytime-parts .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.daytime-parts .container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.daytime-parts .container div span{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+/* END OF DAYTIME-ITEMS */
+
+/* START OF GALLERY */
+#gallery{
+    background: url("img/offer-background.jpg");
+    padding: 4.5rem 0;
+}
+ #gallery .container{
+    width: 80%;
+    margin: auto;
+}
+#gallery .container h2{
+    font-size: 40px;
+    font-weight: 900;
+    word-spacing: 5px;
+    color: white;
+    text-align: center;
+    padding: 15px 0 20px;
+}
+#gallery .container div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+}
+#gallery .container div img{
+    width: 280px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+#gallery .container div img:hover{
+    opacity: 1;
+}
+/* END OF GALLERY */
+
+/* START OF CONTACT */
+#contact{
+    padding: 5.5rem 0;
+}
+ #contact .container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+#contact .container .left .address h2 {
+    font-size: 40px;
+    font-weight: 900;
+    word-spacing: 5px;
+    padding: 20px 0;
+    color: black;
+}
+#contact .container .left .address p{
+    margin-bottom: 5px;
+    color: #6d6d6d;
+}
+#contact .container .left .address i{
+    margin-right: 10px;
+    color: black;
+}
+#contact .container .left .working-hours h2{
+    font-size: 40px;
+    font-weight: 900;
+    word-spacing: 5px;
+    padding: 20px 0;
+    color: black;
+}
+#contact .container .left .working-hours p{
+    margin-bottom: 5px;
+    color: #6d6d6d;
+}
+#contact .container .left .follow-us h2{
+    font-size: 40px;
+    font-weight: 900;
+    word-spacing: 5px;
+    padding: 20px 0;
+    color: black;
+} 
+#contact .container .left .follow-us i{
+    font-size: 30px;
+    margin:  0 5px;
+    border-radius: 50%;
+}
+#contact .container .left .follow-us i:hover{
+   font-size: 40px;
+}
+#contact .container .right form input{
+  margin: 15px 0;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  background-color: #ede7e7;
+}
+#contact .container .right form textarea{
+    padding: 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    border: none;
+    background-color: #ede7e7;
+}
+#contact .container .btn-four{
+    border: none;
+    background-color: orange;
+    color: white;
+}
+#contact .container  .btn-four:hover{
+    background-color: black;
+}
+/* END OF CONTACT */
+
+/* footer */
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+}
+/* ---------------------------------------------- */
+@media(max-width:1000px){
+    #home .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    #home .navigation img{
+      margin-bottom: 10px;
+    }
+    #about .container .content-of-about{
+        display: flex;
+        justify-content: space-between;
+       flex-direction: column-reverse;
+       text-align: center;
+    }
+    #about .container .content-of-about .content-left {
+        margin-top: 4rem;
+        margin-right: 0;
+    }
+    #about .container .content-of-about .content-left p{
+         text-align: center;
+    }
+    #menu .content-of-menu{
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    #gallery .container div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+    #gallery .container div img{
+        margin: 30px;
+    }
+    #contact .container{
+        width: 90%;
+    }
+}
+
+    @media (max-width:878px){
+        #about .container .content-of-about .content-left {
+            margin-right: 0;
+        }
+        #about .container .content-of-about .content-left p{
+             text-align: center;
+        }
+        #offers .container .content-of-offers{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin:  50px 0;
+        }
+        #offers .container .content-of-offers div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            width: 400px;
+            margin-bottom: 10px;
+        }
+        .daytime-parts{
+            height: auto;
+            padding: 1.6rem 0;
+        }
+        .daytime-parts .container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: auto;
+        }
+        .daytime-parts .container div{
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #gallery .container div{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+        #gallery .container div img{
+           margin: 20px auto;
+        }
+        #contact .container{
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        #contact .container .left{
+            margin-bottom: 50px;
+        }
+        #contact .container .right form{
+            margin-bottom: 30px;
+        }
+        #contact .container .right form textarea{
+            width: 100%;
+        }
+        #home .navigation nav ul li a{
+            padding: 10px;
+        }
+        #home .content h1{
+            font-size: 30px;
+            font-weight: 800;
+            word-spacing: 2px;
+            text-align: center;
+        }
+        #about .container .content-of-about .content-right img{
+            width: 250px;
+        }
+        #about .container .content-of-about{
+            margin:  3rem 2.5rem 0;
+            width: 90%;
+        }
+        #about .container .content-of-about .content-left p{
+            line-height: 1.5;
+            text-align: center;
+    
+        }
+        #about .container .title h2{
+            font-size: 30px;
+            font-weight: 800;
+        }
+        #menu .content-of-menu {
+            width: 90%;
+            margin: 50px auto;
+        }
+    }
+@media(max-width:425px){
+    #home .navigation nav ul li a{
+        padding: 5px;
+    }
+    #home .content h1{
+        font-size: 20px;
+    }
+    #home .content p{
+        text-align: center;
+    }
+    #offers .container .title h2{
+        font-size: 30px;
+        word-spacing: 2px;
+    }
+    #offers .container .content-of-offers div p{
+        margin: 5px 15px;
+    }
+    #menu .container .title h2{
+        font-size: 30px;
+        word-spacing: 2px;
+    }
+    #menu .content-of-menu div img {
+        margin: 15px;
+    }
+    #gallery .container h2 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+}
+
+@media (max-width:360px){
+    #home .navigation nav ul li a{
+        font-size:  15px;
+    }
+    #about .container .content-of-about {
+        margin: 3rem 1.5rem 0;
+    }
+    #about .container .title h2 {
+        font-size: 26px;
+    }
+}
